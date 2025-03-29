@@ -22,3 +22,24 @@ Contains a styled contact form with input fields for Name, Email, Subject, and M
 Uses HTML5 form validation attributes.
 Features animations for form elements (e.g., hover and focus transitions).
 
+Features Used:
+
+CSS Selectors & Styling
+Used element, class, and ID selectors to apply styles.
+Applied padding, margins, background colors, and borders for layout.
+
+Flexbox & Grid Layout
+Flexbox: Used for the navigation bar and content layout on the home page.
+Grid: Implemented in the services page to arrange service cards dynamically.
+
+Responsive Design (Media Queries)
+Adjusts layout for different screen sizes:
+1024px (Tablets & small desktops)
+768px (Tablets)
+480px (Mobile devices)
+
+Animations & Hover Effects
+@keyframes animation applied to:
+Buttons (pulse effect on hover)
+Service cards (scale effect on hover with a shadow)
+
