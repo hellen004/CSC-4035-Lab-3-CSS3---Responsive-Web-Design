@@ -1,7 +1,7 @@
 Lab 3: CSS3 & Responsive Web Design
 👥 Group Members
 1. Hellen Zulu
-2. Mbawemi
+2. Mbawemi Phiri
 
 📄 Project Description
 This project is a multipage website designed to demonstrate the use of CSS3, Flexbox, CSS Grid, media queries, and animations for responsive web design.
