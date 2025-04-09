@@ -5,6 +5,32 @@ body {
     box-sizing: border-box;
 }
 
+button {
+    background-color: #333;
+    color: white;
+}
+/* Dark Theme Styles */
+.dark-theme {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+  
+  /* Optional: Dark styling for specific elements */
+.dark-theme header,
+.dark-theme footer {
+    background-color: #1e1e1e;
+}
+  
+.dark-theme .service-card,
+.dark-theme .form-container {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.dark-theme .sidebar{
+    background-color: #2a2a2a;
+}
+  
 nav ul {
     list-style: none;
     display: flex;
@@ -79,42 +105,52 @@ nav ul li a {
     animation: cardHover 0.4s ease-in-out;
 }
 /* Contact Form */
-.contact-form {
-    padding: 20px;
+.contactForm {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center horizontally */
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-form {
+.contactForm h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+  
+.contactForm form {
     display: flex;
     flex-direction: column;
 }
-
-input, textarea {
-    margin-bottom: 10px;
+  
+.contactForm label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+  
+.contactForm input,
+.contactForm textarea {
     padding: 10px;
-    width: 100%;
     border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
 }
-
-button {
-    background: #333;
+  
+.contactForm button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #333;
     color: white;
-    padding: 10px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 }
-
-/* Button Animation */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
-button:hover {
-    background: #555;
-    animation: pulse 0.3s ease-in-out;
+  
+.contactForm button:hover {
+    background-color: #555;
 }
 
 /* Responsive Design */
@@ -151,3 +187,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+  
