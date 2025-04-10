@@ -1,5 +1,5 @@
-document.getElementById("loadUsersBtn").addEventListener("click", async () => {
-        try {
+document.getElementById("loadUsersBtn").addEventListener("click", async () => { 
+    try {
             const res = await
             fetch('https://jsonplaceholder.typicode.com/users');
             const users = await res.json();
@@ -13,7 +13,7 @@ document.getElementById("loadUsersBtn").addEventListener("click", async () => {
         } catch (err) {
             console.error("Failed to load users:", err);
         }
-    });
+});
 
 document.getElementById("themeToggle").addEventListener("click", () =>
 {
@@ -21,17 +21,17 @@ document.getElementById("themeToggle").addEventListener("click", () =>
 });
     
 document.getElementById("contactForm").addEventListener("submit", (e) => 
-    {
-        e.preventDefault();
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const message = document.getElementById('message').value.trim();
-
-        if (name === "" || email === "" || message === "") {
-          alert("Please fill out all fields.");
-        } else {
-            document.getElementById("response").innerText = `Thanks, ${name}.
-            We'll get back to you soon!`;
-          form.reset();
-        }
-    });
+{
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();        
+    const message = document.getElementById("message").value.trim();
+        
+    if (name === "" || message === "") {
+        alert("Please fill out all fields.");
+    } else {
+        document.getElementById("response").innerText = `Thanks, ${name}.
+        We'll get back to you soon!`;
+        // Optional: reset form
+        e.target.reset();
+    }
+});
